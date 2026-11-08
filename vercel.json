@@ -1,0 +1,25 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/how-restocq-works", "destination": "/how-it-works", "permanent": true },
+    { "source": "/contact-us", "destination": "/contact", "permanent": true },
+    { "source": "/built-for-dental-teams-like-yours", "destination": "/case-study-my-dental-team", "permanent": true },
+    { "source": "/ripe-global", "destination": "/rewards#ripe-global", "permanent": true },
+    { "source": "/savvy-dentist", "destination": "/rewards#savvy-dentist", "permanent": true },
+    { "source": "/practice-ownership-consulting", "destination": "/rewards#practice-ownership-consulting", "permanent": true },
+    { "source": "/hicaps", "destination": "/rewards#hicaps", "permanent": true },
+    { "source": "/centaur", "destination": "/rewards#centaur", "permanent": true },
+    { "source": "/teamwork-technology-2", "destination": "/rewards#teamwork-technology", "permanent": true },
+    { "source": "/dental-drill-solutions", "destination": "/rewards#dental-drill-solutions", "permanent": true },
+    { "source": "/quintessence-publishing-australia-new-zealand", "destination": "/rewards#quintessence", "permanent": true },
+    { "source": "/js-medical-dental-finance", "destination": "/rewards#js-finance", "permanent": true },
+    { "source": "/bdh-leaders", "destination": "/rewards#bdh-leaders", "permanent": true },
+    { "source": "/bdhl-wealth", "destination": "/rewards#bdhl-wealth", "permanent": true },
+    { "source": "/bdhl-finance", "destination": "/rewards#bdhl-finance", "permanent": true },
+    { "source": "/super-for-health", "destination": "/rewards#super-for-health", "permanent": true }
+  ],
+  "headers": [
+    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] }
+  ]
+}
