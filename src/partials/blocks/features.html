@@ -1,47 +1,127 @@
-<div class="grid grid-3">
-  <article class="card feature reveal" data-delay="1">
-    <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
-    <h3>Browse and search</h3>
-    <p>Explore products from every supplier in one catalogue and quickly identify the best option for your clinic.</p>
+<div class="bento">
+
+  <!-- 1. Smart ordering: big tile with order mock -->
+  <article class="tile tile--soft span-2 reveal" id="f-smart-ordering" data-delay="1">
+    <div class="tile__head">
+      <div class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></svg></div>
+      <h3>Smart ordering across every supplier</h3>
+    </div>
+    <p>One basket, 30+ suppliers. Restocq flags cheaper equivalents and suggests what to reorder based on how your practice actually uses stock.</p>
+    <div class="tile__ui ui">
+      <div class="ui-card">
+        <div class="ui-row"><span class="ui-sq" style="background:var(--lilac)"></span><span class="ui-name">Nitrile gloves, medium (200)<span class="ui-sub">Healthware · usual order</span></span><span class="ui-price">$14.90</span><span class="ui-tag ui-tag--mint">Cheaper by $2.10</span></div>
+        <div class="ui-row"><span class="ui-sq" style="background:var(--orange-100)"></span><span class="ui-name">Composite A2 syringe<span class="ui-sub">Kerr · reorder suggested</span></span><span class="ui-price">$62.00</span><span class="ui-tag ui-tag--orange">Low stock</span></div>
+        <div class="ui-row"><span class="ui-sq" style="background:var(--mint-50)"></span><span class="ui-name">Prophy paste, mint (200)<span class="ui-sub">AHP Dental · favourite</span></span><span class="ui-price">$38.50</span><span class="ui-tag ui-tag--lilac">In basket</span></div>
+      </div>
+    </div>
   </article>
-  <article class="card feature reveal" data-delay="2">
-    <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></svg></div>
-    <h3>Smart ordering</h3>
-    <p>Get insights into cheaper alternatives and suggestions tailored to your clinic, so every order is simpler and smarter.</p>
+
+  <!-- 2. Budgeting: tall tile with bars -->
+  <article class="tile tile--lilac row-2 reveal" id="f-budgeting" data-delay="2">
+    <div class="tile__head">
+      <div class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-6"/></svg></div>
+      <h3>Budgeting and spend visibility</h3>
+    </div>
+    <p>Set monthly budgets per practice, watch spend in real time and get alerts before you go over.</p>
+    <div class="tile__ui ui">
+      <div class="ui-card" style="padding:16px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><span style="font-weight:700">November spend</span><span class="ui-tag ui-tag--mint">On track</span></div>
+        <div class="ui-bars"><i class="is-prev" style="height:60%"></i><i class="is-prev" style="height:78%"></i><i class="is-prev is-over" style="height:100%"></i><i style="height:52%"></i><i style="height:66%"></i><i style="height:45%"></i></div>
+        <div class="ui-legend"><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span></div>
+        <div style="display:flex;align-items:center;gap:14px;margin-top:16px"><div class="ui-ring"><b>68%</b></div><div><div style="font-weight:700">$4,080 of $6,000</div><div class="ui-sub">budget used with 9 days left</div></div></div>
+      </div>
+    </div>
   </article>
-  <article class="card feature reveal" data-delay="3">
-    <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 21.5l8.8-8.8a5 5 0 0 0 0-7.1z"/></svg></div>
-    <h3>Favourites</h3>
-    <p>Heart the items you order most to build quick-reorder lists that make restocking take seconds, not hours.</p>
+
+  <!-- 3. Browse and search -->
+  <article class="tile reveal" id="f-browse" data-delay="3">
+    <div class="tile__head">
+      <div class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
+      <h3>Browse and search</h3>
+    </div>
+    <p>Find any product across every supplier and compare options side by side.</p>
+    <div class="tile__ui ui">
+      <div class="ui-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><b>impression material</b></div>
+      <div class="ui-chips"><span>12 results</span><span>4 suppliers</span><span>from $41</span></div>
+    </div>
   </article>
-  <article class="card feature reveal" data-delay="1">
-    <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-6"/></svg></div>
-    <h3>Budgeting and spend visibility</h3>
-    <p>Track procurement spend, set monthly budgets and stay on target with automated alerts and reports.</p>
+
+  <!-- 4. Favourites -->
+  <article class="tile reveal" id="f-favourites" data-delay="1">
+    <div class="tile__head">
+      <div class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 21.5l8.8-8.8a5 5 0 0 0 0-7.1z"/></svg></div>
+      <h3>Favourites</h3>
+    </div>
+    <p>Heart the items you order most and reorder your whole list in seconds.</p>
+    <div class="tile__ui ui">
+      <div class="ui-card">
+        <div class="ui-row"><svg class="ui-heart" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 21.5l8.8-8.8a5 5 0 0 0 0-7.1z"/></svg><span class="ui-name">Monthly consumables</span><span class="ui-tag ui-tag--lilac">24 items</span></div>
+        <div class="ui-row"><svg class="ui-heart" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 21.5l8.8-8.8a5 5 0 0 0 0-7.1z"/></svg><span class="ui-name">Hygiene room</span><span class="ui-btn">Reorder</span></div>
+      </div>
+    </div>
   </article>
-  <article class="card feature reveal" data-delay="2">
-    <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div>
-    <h3>Inventory management</h3>
-    <p>Monitor stock levels in real time, get low-inventory alerts and avoid overstocking or understocking from one place.</p>
+
+  <!-- 6. Inventory -->
+  <article class="tile reveal" id="f-inventory" data-delay="3">
+    <div class="tile__head">
+      <div class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div>
+      <h3>Inventory management</h3>
+    </div>
+    <p>Live stock levels with low-stock alerts, so you never over- or under-order.</p>
+    <div class="tile__ui ui">
+      <div class="ui-card">
+        <div class="ui-row"><span class="ui-name">Anaesthetic cartridges</span><span class="ui-tag ui-tag--red">3 left</span></div>
+        <div class="ui-row"><span class="ui-name">Suction tips</span><span class="ui-tag ui-tag--mint">In stock</span></div>
+      </div>
+    </div>
   </article>
-  <article class="card feature reveal" data-delay="3">
-    <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div>
-    <h3>Order status and delivery tracking</h3>
-    <p>Follow every order from dispatch to delivery with real-time updates, so your whole team knows what is arriving and when.</p>
+
+  <!-- 7. Roles and approvals -->
+  <article class="tile reveal" id="f-roles" data-delay="1">
+    <div class="tile__head">
+      <div class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17.5" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 6 5"/></svg></div>
+      <h3>Roles and approvals</h3>
+    </div>
+    <p>Let the team order with custom permissions and approval flows. You keep control.</p>
+    <div class="tile__ui ui" style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+      <div class="ui-avatars"><span style="background:var(--purple)">JM</span><span style="background:var(--orange-600)">AL</span><span style="background:var(--mint)">SK</span><span style="background:var(--navy)">+2</span></div>
+      <span class="ui-btn ui-btn--mint">Approve $412</span>
+    </div>
   </article>
-  <article class="card feature reveal" data-delay="1">
-    <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17.5" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 6 5"/></svg></div>
-    <h3>Multi-user access with roles and approvals</h3>
-    <p>Delegate ordering to your team with custom permissions and approval flows, while the practice keeps full control.</p>
+
+  <!-- 5. Order tracking -->
+  <article class="tile tile--peach reveal" id="f-tracking" data-delay="2">
+    <div class="tile__head">
+      <div class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div>
+      <h3>Order status and delivery tracking</h3>
+    </div>
+    <p>Follow every order from dispatch to your front door, with real-time updates the whole team can see.</p>
+    <div class="tile__ui ui">
+      <div class="ui-card" style="padding:18px 14px 12px">
+        <ul class="ui-steps"><li class="done">Placed</li><li class="done">Confirmed</li><li class="now">Dispatched</li><li>Delivered</li></ul>
+        <div style="display:flex;justify-content:space-between;margin-top:14px;padding:0 4px"><span class="ui-sub">Order #48213 · Kulzer</span><span class="ui-tag ui-tag--orange">Arrives Thu</span></div>
+      </div>
+    </div>
   </article>
-  <article class="card feature reveal" data-delay="2">
-    <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
-    <h3>Future-proof your practice</h3>
-    <p>Streamlined ordering and supplier management that stays consistent and efficient, even when staff change.</p>
+
+  <!-- 8. Future-proof -->
+  <article class="tile reveal" id="f-future" data-delay="2">
+    <div class="tile__head">
+      <div class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+      <h3>Future-proof your practice</h3>
+    </div>
+    <p>Ordering knowledge lives in Restocq, not in one person's head. Staff change, your system doesn't.</p>
+    <div class="tile__ui ui"><div class="ui-progress"><i style="width:100%"></i></div><div class="ui-legend"><span>Supplier accounts</span><span>Saved</span></div></div>
   </article>
-  <article class="card feature feature--dark reveal" data-delay="3">
-    <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7z"/></svg></div>
-    <h3>Member benefits</h3>
-    <p>Unlock exclusive offers and rewards through our corporate partnerships, available only to Restocq members.</p>
+
+  <!-- 9. Member benefits -->
+  <article class="tile tile--dark span-2 reveal" id="f-benefits" data-delay="3">
+    <div class="tile__head">
+      <div class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7z"/></svg></div>
+      <h3>Member benefits and HICAPS corporate rates</h3>
+    </div>
+    <p>Exclusive offers and rewards through the Restocq Collective, including a corporate rate on HICAPS that often covers the subscription on its own.</p>
+    <div class="tile__ui ui-logos"><span>HICAPS</span><span>Ripe Global</span><span>Savvy Dentist</span><span>Centaur</span><span>BDH Leaders</span><span>+8 more</span></div>
   </article>
+
 </div>

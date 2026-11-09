@@ -8,7 +8,7 @@ Deploys anywhere that serves static files: Vercel, Netlify, GitHub Pages, SiteGr
 
 | File | Purpose |
 |---|---|
-| `index.html` | Home: hero, supplier marquee, 9 key features, results stats, CTA band, videos, testimonials, featured in, events gallery, latest insights |
+| `index.html` | Home: photo-collage hero, supplier marquee, bento feature grid with built-in UI mockups, results band, mixed-orientation video wall, testimonial spotlight + marquee, press tiles, community photo mosaic, latest insights, CTA |
 | `how-it-works.html` | Features, 3-step getting started, case study teaser, press logos |
 | `pricing.html` | Plus / Premium with monthly / annual toggle, inclusions, FAQ |
 | `testimonials.html` | Videos, all 6 testimonials, case study stats |
@@ -23,7 +23,7 @@ Deploys anywhere that serves static files: Vercel, Netlify, GitHub Pages, SiteGr
 
 ```
 assets/css/styles.css      design system (brand orange #FE915B from the logo, navy #0F1F3D)
-assets/js/main.js          header, mobile drawer, reveal animations, pricing toggle, forms, offer popup
+assets/js/main.js          floating navbar (sliding indicator, Platform mega-menu), full-screen mobile menu, reveal animations, click-to-play Vimeo facades, pricing toggle, forms, offer popup
 assets/img/                logo, favicons (remote images land here after localising, see below)
 src/partials/              head.html, header.html, footer.html + blocks/ (features, testimonials, videos, press, cta, suppliers)
 src/pages/*.html           page bodies with a JSON front-matter comment (title, description)
@@ -33,6 +33,13 @@ tools/localise-assets.py   downloads the restocq.com images into assets/img and 
 
 To change the header or footer, edit `src/partials/*.html` and run `python3 tools/build.py`.
 The built HTML in the root is what gets deployed.
+
+## Design notes
+
+- Brand palette and type are taken from the live site's Elementor kit: orange `#FF9859`, purple `#4A0094`, plum `#261141`, lilac `#EEEDFE`, peach `#FFE0CC`; DM Sans for headings, Heebo for body.
+- Most of the client's imagery is transparent cut-outs (hero figure, team photo, laptop graphics), so those render without card backgrounds. Event photos are used across the home page (hero collage, results band, testimonial spotlight, mosaic, CTA, mega-menu card).
+- Videos: Vimeo 1118995180 is 16:9, 931781557 and 1100499032 are 9:16. The video wall lays them out accordingly and loads the player only on click (poster images come from Vimeo's CDN).
+- The feature grid's small UI mockups are plain HTML/CSS with illustrative numbers. Swap them for real product screenshots in `src/partials/blocks/features.html` if preferred.
 
 ## Before go-live (checklist)
 
